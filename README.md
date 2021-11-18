@@ -1,5 +1,7 @@
 #### hgi-vault dev scripts
 
+This branch scratch123_hgi_vault_dev is for /lustre/scratch123/hgi/projects/hgi_vault_de 
+
 This repo hosts example helper scripts to test & deploy [hgi-vault](https://github.com/wtsi-hgi/hgi-vault).  
 cf. related HGI internal Confluence documentation to deploy vault on `/lustre` project:
 https://confluence.sanger.ac.uk/display/HGI/Vault+Deployment
