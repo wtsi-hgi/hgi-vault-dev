@@ -2,3 +2,5 @@ singularity_postgres/postgres_env_file.txt
 singularity_postgres/postgres.sif
 singularity_postgres/postgres_data
 singularity_postgres/postgres_run
+local_tmp_dir
+local_pip_cache_dir
