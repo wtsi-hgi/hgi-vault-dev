@@ -1,5 +1,5 @@
-postgres_data=/home/ubuntu/postgres_data
-postgres_run=/home/ubuntu/postgres_run
+postgres_data=~/hgi-vault-dev/singularity_postgres/postgres_data
+postgres_run=~/hgi-vault-dev/singularity_postgres/postgres_run
 
 mkdir -p $postgres_data
 mkdir -p $postgres_run
