@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-declare ROOT="/lustre/scratch119/humgen/teams/hgi"
-declare CROOK_ROOT="${ROOT}/crook-shepherd/crook"
-declare VAULT_ROOT="${ROOT}/vault"
+declare ROOT="/lustre/scratch118/humgen/hgi/projects/hgi_vault_dev/scratch123"
+declare CROOK_ROOT="${ROOT}/code/crook-shepherd/crook"
+declare VAULT_ROOT="${ROOT}/code/vault"
 
 # Logging
 exec 1>>"${VAULT_ROOT}/var/log/crook.log"
