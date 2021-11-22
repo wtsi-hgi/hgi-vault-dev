@@ -19,5 +19,5 @@ bash singularity_run.sh
 
 
 #### docs
-https://hub.docker.com/_/postgres/
+https://hub.docker.com/_/postgres/  
 https://brechtv.medium.com/running-postgresql-inside-a-singularity-container-f054c5ef1305
