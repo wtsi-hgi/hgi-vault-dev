@@ -1,6 +1,6 @@
 #### hgi-vault dev scripts
 
-This branch scratch123_hgi_vault_dev is for /lustre/scratch123/hgi/projects/hgi_vault_de 
+This branch scratch123_hgi_vault_dev is for /lustre/scratch123/hgi/projects/hgi_vault_dev
 
 This repo hosts example helper scripts to test & deploy [hgi-vault](https://github.com/wtsi-hgi/hgi-vault).  
 cf. related HGI internal Confluence documentation to deploy vault on `/lustre` project:
@@ -13,3 +13,6 @@ main scripts:
 - [vault](vault) is an example wrapper to activate python env and run vault
 - [sandman](sandman) is an example wrapper to activate python env and run sandman
 - [crook.sh](crook.sh)
+
+deploy test postgress DB in Openstack instance:
+[singularity_postgres](singularity_postgres/README.md)
