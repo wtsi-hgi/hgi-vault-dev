@@ -17,7 +17,10 @@ edit `postgres_env_file.txt.example` into `postgres_env_file.txt`, then
 bash singularity_run.sh
 ```
 
-
 #### docs
 https://hub.docker.com/_/postgres/  
 https://brechtv.medium.com/running-postgresql-inside-a-singularity-container-f054c5ef1305
+
+#### frontend
+deploy frontend DB on FCE instance with pgAdmin 4:  
+https://www.pgadmin.org/download/pgadmin-4-apt/
