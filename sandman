@@ -3,7 +3,10 @@
 declare ROOT="/lustre/scratch118/humgen/hgi/projects/hgi_vault_dev/scratch123"
 declare BINARY="$(basename "$0")"
 
+echo source "${ROOT}/hgi_vault_env/bin/activate"
 source "${ROOT}/hgi_vault_env/bin/activate"
+echo source done
 
-export VAULTRC="${ROOT}/etc/vaultrc"
+export VAULTRC="${ROOT}/vaultrc"
+echo VAULTRC is $VAULTRC
 exec "${BINARY}" "$@"
