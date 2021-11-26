@@ -12,7 +12,8 @@ python -m venv /software/hgi/installs/anaconda3/envs/py310/venv
 
 source /software/hgi/installs/anaconda3/envs/py310/venv/bin/activate
 python -m pip install --upgrade pip
-
+pip install --upgrade nox
+ 
 # install poetry project
 poetry install
 ```
