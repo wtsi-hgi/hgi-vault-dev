@@ -2,3 +2,5 @@
 __pycache__/
 poetry_cache/
 poetry.lock
+.nox/
+no_git/
