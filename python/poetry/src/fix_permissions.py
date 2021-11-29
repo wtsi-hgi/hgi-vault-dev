@@ -1,24 +1,20 @@
-import os
-import stat
-from datetime import datetime, timedelta
 from pathlib import Path
+import stat
 
-# Paths we're interested in
-ROOT = Path("/lustre/scratch114/teams/hgi")
-HGI_USERS = ROOT / "users"
 
-def is_under(path:Path, parent:Path) -> bool:
+def is_under(path: Path, parent: Path) -> bool:
     try:
         _ = path.relative_to(parent)
         return True
     except ValueError:
         return False
 
+
 class Walker:
-    def __init__(self, root:Path) -> None:
+    def __init__(self, root: Path) -> None:
         self._walk(root.resolve())
 
-    def _walk(self, directory:Path) -> None:
+    def _walk(self, directory: Path) -> None:
         for path in directory.iterdir():
             if not path.is_symlink():
                 if path.is_dir():
@@ -28,7 +24,7 @@ class Walker:
                 elif path.is_file():
                     self.act_on_file(path)
 
-    def act_on_file(self, path:Path) -> None:
+    def act_on_file(self, path: Path) -> None:
         file_stat = path.stat()
 
         # File gets ug+rw and g=u
@@ -39,15 +35,10 @@ class Walker:
 
         print(f"File\t{path}\tug+rw,g=u")
 
-    def act_on_directory(self, directory:Path) -> None:
+    def act_on_directory(self, directory: Path) -> None:
         # Directory gets ug+wx
         mode = directory.stat().st_mode
         mode |= stat.S_IWUSR | stat.S_IXUSR | stat.S_IWGRP | stat.S_IXGRP
         directory.chmod(mode)
 
         print(f"Directory\t{directory}\tug+wx")
-
-
-if __name__ == "__main__":
-    os.umask(stat.S_IRWXO)
-    Walker(ROOT)
