@@ -4,7 +4,10 @@ set -xe
 
 poetry install
 
+# poetry run main \
+#        --walker "checker" \
+#        --walk_root /lustre/scratch123/hgi/projects/crohns/mercury/hgi-vault-dev/python/no_git
+
 poetry run main \
-       --walk_root /lustre/scratch114/projects/crohns/.mk23
-#
-#       --walk_root /lustre/scratch123/hgi/projects/crohns/mercury/hgi-vault-dev/python/no_git
+       --walker "checker" \
+       --walk_root /lustre/scratch114/projects/crohns

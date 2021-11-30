@@ -7,6 +7,7 @@ authors = ["gn5 <gn5@sanger.ac.uk>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.0"
+logdecorator = "^2.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
