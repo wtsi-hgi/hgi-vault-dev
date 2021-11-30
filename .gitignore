@@ -4,3 +4,4 @@ poetry_cache/
 poetry.lock
 .nox/
 no_git/
+tmp/
