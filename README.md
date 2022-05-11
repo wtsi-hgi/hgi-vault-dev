@@ -8,11 +8,9 @@ https://confluence.sanger.ac.uk/display/HGI/Vault+Deployment
   
 main scripts:
 - [create-state.sh](create-state.sh) creates dummy testing files for Vault in a /lustre project.
-- [vault-cron-job.sh](vault-cron-job.sh) runs the vault sweep (sandman) periodically.
+- [cron_job.sh](cron_job.sh) runs the vault sweep (sandman).
 - [upgrade-vault.sh](upgrade-vault.sh)
-- [vault](vault) is an example wrapper to activate python env and run vault
-- [sandman](sandman) is an example wrapper to activate python env and run sandman
-- [crook.sh](crook.sh)
+- [bootstrap](bootstrap) can be used to activate python env, config and run vault and sandman if you create symlinks with those names pointing to bootstrap. 
 
 deploy test postgress DB in Openstack instance:
 [singularity_postgres](singularity_postgres/README.md)
