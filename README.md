@@ -13,5 +13,8 @@ main scripts:
 - [bootstrap](bootstrap) can be used to activate python env, config and run vault and sandman if you create symlinks with those names pointing to bootstrap.
 - [add_path.sh](add_path.sh) adds the main production vault & sandman executables to your path, along with the scripts in this repo.
 
+Sandman is configured to use crook & shepherd to do its archiving. See [vault-crook-shepherd](https://gitlab.internal.sanger.ac.uk/hgi-projects/vault-crook-shepherd) for scripts for dealing with that.
+
+
 deploy test postgress DB in Openstack instance:
 [singularity_postgres](singularity_postgres/README.md)
