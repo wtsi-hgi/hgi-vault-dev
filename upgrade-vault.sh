@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-declare ROOT="/lustre/scratch119/realdata/mdt3/teams/hgi/vault"
+declare ROOT="/software/hgi/installs/vault"
 
-cd "${ROOT}/hgi-vault"
-git pull --rebase
+cd "${ROOT}/repo"
+git pull
 
-source "${ROOT}/hgi-vault/.venv/bin/activate"
+source "${ROOT}/venv/bin/activate"
 pip install --force-reinstall .
