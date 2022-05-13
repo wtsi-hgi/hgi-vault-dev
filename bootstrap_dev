@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+declare ROOT="/software/hgi/installs/vault/dev"
+declare BINARY="$(basename "$0")"
+
+source "${ROOT}/venv_${USER}/bin/activate"
+export VAULTRC="${ROOT}/etc/vaultrc.${USER}"
+export SANDMANRC=$VAULTRC
+exec "${BINARY}" "$@"
