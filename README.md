@@ -1,6 +1,6 @@
 #### hgi-vault dev scripts
 
-This branch slash_software is for the vault install at/software/hgi/installs/vault.
+This branch slash_software is for the vault install at /software/hgi/installs/vault.
 
 This repo hosts helper scripts to test & deploy [hgi-vault](https://github.com/wtsi-hgi/hgi-vault).  
 cf. related HGI internal Confluence documentation to deploy vault on `/lustre` project:
