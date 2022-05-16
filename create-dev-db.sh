@@ -26,5 +26,5 @@ psql -U $DB_USER -h $DB_HOST -d postgres -c "CREATE DATABASE sandman_dev_$USER;"
 [[ $? -ne 0 ]] && echo 'use -f to drop and recreate database'
 set -e
 
-umask u=rw,go=
+umask u=rw,g=r,o=
 sed "s/--USER_SPECIFIC--/sandman_dev_$USER/" $CONFIG_ROOT/sandmanrc.dev > $CONFIG_ROOT/sandmanrc.$USER
