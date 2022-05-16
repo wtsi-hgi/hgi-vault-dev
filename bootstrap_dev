@@ -5,5 +5,5 @@ declare BINARY="$(basename "$0")"
 
 source "${ROOT}/venv_${USER}/bin/activate"
 export VAULTRC="${ROOT}/etc/vaultrc.${USER}"
-export SANDMANRC=$VAULTRC
+export SANDMANRC="$ROOT/etc/sandman.rc.$USER"
 exec "${BINARY}" "$@"
